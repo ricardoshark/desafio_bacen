@@ -1,0 +1,36 @@
+# Cenário
+
+Vamos considerar uma grande corretora de valores da qual a liderança da empresa deseja promover uma mudança cultural, a fim de que de fato seja data driven. 
+Acostumada com as metodologias de desenvolvimento ágeis para softwares, ela deseja aplicar os princípios ágeis ao desenvolvimento de um Data Lake. 
+Hoje existem mais de mil fontes de dados em uso dentro da corretora, há bases internas e externas. Além disso, existem tecnologias como de Data Warehouse que precisam 
+de modernização. Essas fontes estão pulverizadas entre diferentes diretorias, de tal forma que, dados críticos de negócio estão presos a determinadas áreas, 
+e por isso são apenas acessíveis através de requisições burocráticas. O objetivo inicial é permitir a democratização do uso de dados e garantir um ambiente 
+no qual seus analistas e cientistas de dados possam descobrir insights para que sejam capazes de explorar melhor o seu mercado e oferecer produtos cada vez
+mais personalizados aos seus clientes. Importante lembrar que a corretora possui dados sensíveis e sigilosos, portanto, todo o processo deve ser seguro. 
+
+
+**Objetivo 1** 
+
+> Diante do cenário descrito acima, proponha uma proposta de arquitetura de um Data Lake e escolha as tecnologias em cada uma de suas camadas. 
+> Após o desenho, justifique cada uma de suas escolhas e defenda a arquitetura desenhada. 
+
+
+**Objetivo 2**
+
+
+Utilize a base de dados disponível neste repositório e o Apache Spark para realizar a ingestão de dados, seguindo as regras abaixo:
+
+1. Conversão do formato dos arquivos: Converta o arquivo CSV dados.csv, para um formato colunar de alta performance de leitura de sua escolha e justificar.
+
+2. Realize a deduplicação dos dados após a conversão;
+
+3. Remova os registros onde a coluna Instituição Financeira estiver vazia ou nula; e
+
+4.Defina o tipo correto para pelo menos 4 colunas. 
+
+
+# Notas gerais
+- Todas as operações devem ser realizadas utilizando Spark. 
+ O serviço de execução fica a seu critério, podendo utilizar tanto serviços locais como serviços em cloud, desde que seja possível acessarmos para validação. 
+ 
+ - Cada operação deve ser realizada no dataframe resultado.
